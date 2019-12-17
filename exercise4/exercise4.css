@@ -1,0 +1,37 @@
+*{
+    background: black;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+  }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+
+@media(min-width:320px) and (max-width:700px){
+    .cell{
+        width: calc(100% / 3);
+    }
+}
+@media(min-width:700px ) and (max-width: 889px){
+    .cell{
+        width: calc(100% / 4);
+    }
+}
+@media(min-width:900px){
+    .cell{
+        width: calc(100% / 5);
+    }
+}
